@@ -1,15 +1,10 @@
 {
-  "title": "gitbook tutorial",
+  "title": "iOS Develop Note",
+  "author" : "Paul"
   "structure": {
-    "readme": "intro.md"
+    "readme": "README.md"
   },
   "links": {
     "gitbook": false,
-    "sharing": {
-      "google": false,
-      "facebook": false,
-      "twitter": false,
-      "all": false
-    }
   }
 }
