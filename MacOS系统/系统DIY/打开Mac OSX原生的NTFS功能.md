@@ -14,7 +14,7 @@ Mac OSX由于版权等原因没有在默认情况支持这种格式，不过确�
     LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse
 
 `Win\040Ntfs\040Drive` 这串字符中`\040`代表空格，`Win\040Ntfs\040Drive` 这一串出现在`diskutil list`那个屏幕里面，比如下图就是HD-E1
-![](http://img.blog.csdn.net/20161228101320061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2FuZ2p1bmxpbmc4ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](/MacOS系统/系统DIY/media/15060700288624/20161228101320061.png)
 
 4、最后一步
 
