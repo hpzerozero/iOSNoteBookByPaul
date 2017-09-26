@@ -26,3 +26,22 @@ if (@available(iOS 11.0, *)){
 }
     
 ```
+
+##### 修改UIBarButtonItem的自定义customView的位置大小
+```
+let button = UIButton(type: .custom)
+     button.addTarget(self, action:#selector(self.toLogin(_:)), for: .touchUpInside)
+     button.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+     button.setTitleColor(UIColor.white, for: .normal)
+     button.setTitleColor(UIColor.white, for: .highlighted)
+
+
+    var buttomItem : UIBarButtonItem = UIBarButtonItem()
+    buttomItem.customView = button
+    buttomItem.target = self
+    buttomItem.action = "ToLogin"
+let widthConstraint = button.widthAnchor.constraint(equalToConstant: 32)
+ let heightConstraint = button.heightAnchor.constraint(equalToConstant: 32)
+ heightConstraint.isActive = true
+ widthConstraint.isActive = true
+ ```
