@@ -5,7 +5,7 @@
 解决方案： 
 iOS11之前相册对应的key是NSPhotoLibraryUsageDescription，iOS11对应的Key是NSPhotoLibraryAddUsageDescription。同定位的Key一样，由于key没有兼容性，所以需要保留原key以兼容iOS10及之前版本。
 
-##### tableView滚动条高度跳动、上下拉刷新问题
+##### tableView滚动条高度跳动、上下拉刷新问题以及设置的段头段尾的高度不显示
 ```
 self.tableView.estimatedRowHeight = 0;
 self.tableView.estimatedSectionHeaderHeight = 0;
