@@ -17,7 +17,7 @@ if (@available(iOS 11.0, *)){
         _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
 ```
-目前发现所有的Scrollview 及其子类都需要设置     `contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever` ，工程中大量使用列表的同学不要慌，不要忙，因为UIView及其子类都遵循UIAppearance协议，我们可以进行全局配置
+目前发现所有的Scrollview 及其子类都需要设置     `contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever` ，工程中大量使用，因为UIView及其子类都遵循UIAppearance协议，我们可以进行全局配置
 
 ```
 // AppDelegate 进行全局设置
