@@ -40,6 +40,7 @@ let button = UIButton(type: .custom)
     buttomItem.customView = button
     buttomItem.target = self
     buttomItem.action = "ToLogin"
+// 加上约束 
 let widthConstraint = button.widthAnchor.constraint(equalToConstant: 32)
  let heightConstraint = button.heightAnchor.constraint(equalToConstant: 32)
  heightConstraint.isActive = true
