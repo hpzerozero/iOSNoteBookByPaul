@@ -17,13 +17,13 @@ from，through，最后一个值将会小(大)于等于through的值
 stride(from:3, through:0, by:-1) 表示3，2，1，0
 
 ```
-for idx in stribe(from:3, to:0,by:-1) {
+for idx in stride(from:3, to:0,by:-1) {
 print(i)
 }
 ```
 
 ```
-for idx in stribe(from:3, through:0,by:-1) {
+for idx in stride(from:3, through:0,by:-1) {
 print(i)
 }
 
