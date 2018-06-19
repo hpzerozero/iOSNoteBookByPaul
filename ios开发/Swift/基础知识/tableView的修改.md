@@ -34,7 +34,7 @@ tableView.endUpdates()
 
 需修改为：
 ```
-if self.favoriteList.count > 1 {
+                if self.favoriteList.count > 1 {
                     
                     self.favoriteList.remove(at: indexPath.row)
                     tableView.beginUpdates()
