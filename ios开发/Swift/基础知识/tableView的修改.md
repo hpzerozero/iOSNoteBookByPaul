@@ -9,7 +9,7 @@ tableView.deleteRows(at: [indexPath], with: .left)
 tableView.endUpdates()
 ```    
 
-
+返回的cell数量是这么写的，返回1是默认没数据显示空数据界面，而这个界面使用的cell
 ```
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
