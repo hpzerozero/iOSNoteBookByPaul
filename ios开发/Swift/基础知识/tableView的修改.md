@@ -46,4 +46,5 @@ if self.favoriteList.count > 1 {
                 }
 ```
 
+注意：使用这种方式删除一定要和numberOfRowsInSection代理方法密切配合
 
