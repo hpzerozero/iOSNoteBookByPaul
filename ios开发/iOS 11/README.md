@@ -5,6 +5,33 @@
 解决方案： 
 iOS11之前相册对应的key是NSPhotoLibraryUsageDescription，iOS11对应的Key是NSPhotoLibraryAddUsageDescription。同定位的Key一样，由于key没有兼容性，所以需要保留原key以兼容iOS10及之前版本。
 
+####iOS11上如果只读相册不需要用户权限就可以打开
+大家都知道访问相册需要申请用户权限。 相册权限需要在info.plist—Property List文件中添加NSPhotoLibraryUsageDescription键值对，描述文字不能为空。 iOS11之前：访问相册和存储照片到相册（读写权限），需要用户授权，需要添加NSPhotoLibraryUsageDescription。
+
+iOS11之后：**默认开启访问相册权限（读权限**），无需用户授权，无需添加NSPhotoLibraryUsageDescription，适配iOS11之前的还是需要加的。 添加图片到相册（写权限），需要用户授权，需要添加 NSPhotoLibraryAddUsageDescription。
+
+总结：iOS11之后如果需要写入权限需要添加`NSPhotoLibraryAddUsageDescription`字段。 
+```
+NSPhotoLibraryUsageDescription：
+
+Property List：
+
+Privacy - Photo Library Usage Description
+```
+Source Code：
+
+`NSPhotoLibraryUsageDescription `是否允许此APP使用相册？
+```
+NSPhotoLibraryAddUsageDescription ：
+
+Property List：
+
+Privacy - Photo Library Additions Usage Description
+```
+Source Code:
+
+`NSPhotoLibraryAddUsageDescription` 是否允许此APP保存图片到相册？
+
 ##### tableView滚动条高度跳动、上下拉刷新问题以及设置的段头段尾的高度不显示
 ```
 self.tableView.estimatedRowHeight = 0;
